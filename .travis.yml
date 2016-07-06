@@ -1,0 +1,24 @@
+language: node_js
+os:
+- linux
+- osx
+node_js:
+- 4
+- 5
+- 6
+notifications:
+  email: false
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/54f8a1e753f859f5ca1a
+    on_start: never
+    on_failure: change
+deploy:
+  provider: npm
+  email: jimmy.aumard@gmail.com
+  api_key:
+    secure: xII3d8CP+gSDdsDMnsfBqXHjZHHzBxfpbxTXKtLEJ/dLW4JDxUCMprIBAkbXRRAx645pXeJoDSLj9EHPBYBxI1m760Ity6uVQWvAR9Jq+H0b/c5+PamZg121cD709AKN8Jtbadjzc/9HCCC4lLrbZNVwn5LLMuS0JXMNzRxwnO3AIPMGN09/knCtlRPZH7JeAOvZnY+rsQq8UhjWtx2MTPjf494YMPVwvDzxy7ssS03zEnWabH+9W+/GSHCjgW4ALj5IeE7Dx87K8wYVcIoaxFRPVB4HCDzEMkjldYl1/x+OKNntRUv9Hd2m50KcJHER1y5h0GQa1zRoX095tNrrLhBq8dgpuqHq6fHArrdtey3nJIFu1YEuQ83C6V+OEXEAyXi7jCq9mp6GVD6N6FEFX0dlZ2drG0na5V/fXSFKJdwYquVAHHWF3dTV3YXHoHFJvfbU9KmYRJ9wT+XwnDYwXvCdg4BIbujiy7wY77xt/uFJjJUwqIPXJRKMDw8gGKQqcQyoafQsCP1bbjpoIhGHPHmUb31ljPxNqOvsIxkhCptbRaO540YuNUKCTb+bgpg2HUkvtfUBJNVXYBLt4VWB6C3WQXxLnYqxFzC3UGTl0sp3Fog8URQMMgMmi0yLKWrnFrfYKUbDUIq1NDnbox1cOjguoocPx3RDvWmLEqcpGhI=
+  on:
+    tags: true
+    repo: jaumard/trailpack-lob
+    node: 6
