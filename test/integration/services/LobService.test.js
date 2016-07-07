@@ -23,9 +23,9 @@ describe('LobService', () => {
   it('should send a letter based on HTML', () => {
     return global.app.services.LobService.sendLetter(to, '<html><head></head><body><h1>{{name}}</h1></body></html>',
       {name: 'test'}, {}).then(letter => {
-      assert(letter)
-      assert.equal(letter.object, 'letter')
-    })
+        assert(letter)
+        assert.equal(letter.object, 'letter')
+      })
   })
 
   it('should send a letter based on PDF', () => {
@@ -39,9 +39,9 @@ describe('LobService', () => {
     return global.app.services.LobService.sendPostcard(to, '<html><head></head><body><h1>{{name}}</h1></body></html>',
       '<html><head></head><body><h1>{{name}}</h1></body></html>',
       {name: 'test'}, {}).then(postcard => {
-      assert(postcard)
-      assert.equal(postcard.object, 'postcard')
-    })
+        assert(postcard)
+        assert.equal(postcard.object, 'postcard')
+      })
   })
   it('should send a postcard based on PDF', () => {
     return global.app.services.LobService.sendPostcard(to, filePostcard, filePostcard, {name: 'test'}, {}).then(postcard => {
