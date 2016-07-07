@@ -10,4 +10,7 @@ describe('Trailpack', () => {
   it('Should be loaded into the app.packs collection', () => {
     assert(pack)
   })
+  it('Should have lob API', () => {
+    assert(pack.api)
+  })
 })

@@ -3,6 +3,12 @@
 module.exports = {
   apiKey: 'Your API key',
   /**
+   * Options to pass during lob initialisation
+   * @see https://github.com/lob/lob-node#options
+   */
+  options: {},
+
+  /**
    * From address used to send letters
    * Can be an object or an ID
    */

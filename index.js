@@ -2,6 +2,7 @@
 
 const Trailpack = require('trailpack')
 const lob = require('lob')
+const _ = require('lodash')
 
 module.exports = class LobTrailpack extends Trailpack {
 
@@ -19,7 +20,7 @@ module.exports = class LobTrailpack extends Trailpack {
    * Initialize lob with API key
    */
   initialize () {
-    this.lob = lob(this.app.config.lob.apiKey)
+    this.api = lob(_.merge({apiKey: this.app.config.lob.apiKey}, this.app.config.lob.options))
   }
 
   constructor (app) {

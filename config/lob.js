@@ -1,5 +1,6 @@
 'use strict'
 
 module.exports = {
-  apiKey: 'Your API key'
+  apiKey: 'Your API key',
+  options: {}
 }

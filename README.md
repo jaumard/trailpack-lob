@@ -30,6 +30,48 @@ module.exports = {
 }
 ```
 
+## Usage
+Native usage of lob API : 
+```
+  this.app.packs.lob.api.letters.create({
+     description: 'My First Letter',
+     to: {
+        name: 'Test Person',
+        address_line1: '123 Test Street',
+        address_line2: 'Unit 200',
+        address_city: 'Chicago',
+        address_state: 'IL',
+        address_zip: '60012',
+        address_country: 'US'
+      },
+     from: {
+       name: 'Test Person',
+       address_line1: '123 Test Street',
+       address_line2: 'Unit 200',
+       address_city: 'Chicago',
+       address_state: 'IL',
+       address_zip: '60012',
+       address_country: 'US'
+     },
+     file: '<html>...</html>',
+     data: {
+       name: 'Robin'
+     },
+     color: false
+   }).then(letter => {...})
+```
+
+Usage with the Trails service: 
+```
+this.app.services.LobService.sendLetter(to, file, data, more).then(letter => {...}) 
+
+this.app.services.LobService.sendPostcard(to, front, back, data, more).then(postcard => {...}) 
+```
+
+
+## License
+[MIT](https://github.com/jaumard/trailpack-lob/blob/master/LICENSE)
+
 [npm-image]: https://img.shields.io/npm/v/trailpack-lob.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/trailpack-lob
 [ci-image]: https://img.shields.io/travis//trailpack-lob/master.svg?style=flat-square
