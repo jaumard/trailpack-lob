@@ -1,6 +1,6 @@
 {
   "name": "trailpack-lob",
-  "version": "1.0.0-alpha-1",
+  "version": "1.0.0",
   "description": "Trailpack to send physical mail with Lob API",
   "homepage": "https://github.com/jaumard/trailpack-lob",
   "author": {

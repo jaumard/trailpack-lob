@@ -13,6 +13,16 @@ module.exports = _.defaultsDeep({
     services: { }
   },
   config: {
+    lob: {
+      apiKey: 'test_8719ec89f1c14e7862714c39c2979fdc290',
+      from: {
+        name: 'Joe Smith from',
+        address_line1: 'from 123 Main Street',
+        address_city: 'Mountain View',
+        address_state: 'CA',
+        address_zip: '94041'
+      }
+    },
     main: {
       packs: [
         smokesignals.Trailpack,

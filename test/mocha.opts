@@ -2,6 +2,7 @@
 --recursive
 --full-trace
 --slow 50
+--timeout 15000
 --check-leaks
 --globals app
 --fgrep app.js --invert

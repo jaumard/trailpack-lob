@@ -17,7 +17,8 @@ module.exports = class LobService extends Service {
    * @returns Promise
    */
   sendLetter(to, file, data, more) {
-    return this.app.packs.Lob.api.letters.create(_.merge({
+    if (!more) more = {}
+    return this.app.packs.lob.api.letters.create(_.merge({
       to: to,
       from: this.app.config.lob.from,
       file: file,
@@ -36,8 +37,11 @@ module.exports = class LobService extends Service {
    * @returns Promise
    */
   sendPostcard(to, front, back, data, more) {
-    return this.app.packs.Lob.api.postcards.create(_.merge({
+
+    if (!more) more = {}
+    return this.app.packs.lob.api.postcards.create(_.merge({
       to: to,
+      from: this.app.config.lob.from,
       front: front,
       back: back,
       data: data
