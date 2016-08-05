@@ -4,6 +4,8 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
+[![Beerpay](https://beerpay.io/jaumard/trailpack-lob/badge.svg?style=flat)](https://beerpay.io/jaumard/trailpack-lob)
+[![Beerpay](https://beerpay.io/jaumard/trailpack-lob/make-wish.svg?style=flat)](https://beerpay.io/jaumard/trailpack-lob)
 
 Trailpack to send physical mail with Lob API
 
