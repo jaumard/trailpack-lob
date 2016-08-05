@@ -107,3 +107,8 @@ this.app.services.LobService.sendPostcard(to, front, back, data, more).then(post
 [codeclimate-image]: https://img.shields.io/codeclimate/github//trailpack-lob.svg?style=flat-square
 [codeclimate-url]: https://codeclimate.com/github//trailpack-lob
 
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/jaumard/trailpack-lob/badge.svg?style=beer-square)](https://beerpay.io/jaumard/trailpack-lob)  [![Beerpay](https://beerpay.io/jaumard/trailpack-lob/make-wish.svg?style=flat-square)](https://beerpay.io/jaumard/trailpack-lob?focus=wish)
